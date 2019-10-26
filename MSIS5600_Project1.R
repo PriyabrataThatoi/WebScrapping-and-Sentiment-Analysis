@@ -5,42 +5,43 @@ consumer_secret = "HzOs39nOeSW7HpgUc0MKfCY4zO3P9cOzfD8OEo1nVClEDeFX80"
 access_token = "203019280-4MJRTEfxtyBvO7E0m0vYX6Si59roZNyUwsBXASmA"
 access_secret = "b2pu6GOVhqx7OTAw4YmzKsZjMaajlLVwwvGK1gwvema54"
 
-A = searchTwitter(searchString = 'iPhone11')
+A = searchTwitter(searchString = '"iPhone11"+lang:en', n = 100)
 A
 
-B = searchTwitter(searchString = '"iPhone11"+(#iPhone11)')
+B = searchTwitter(searchString = '"iPhone11"+(#iPhone11)+lang:en', n = 100)
 B
 
-C = searchTwitter(searchString = '#iphone11')
+C = searchTwitter(searchString = '#iphone11+lang:en', n = 100)
 C
 
-D = searchTwitter(searchString = 'iPhone11+review')
+D = searchTwitter(searchString = 'iPhone11+review+lang:en', n = 100)
 D
 
-E = searchTwitter(searchString = '"iPhone11"+lang:en+until:2019-10-22+since:2019-09-20')
+E = searchTwitter(searchString = '"iPhone11"+lang:en+until:2019-10-22+since:2019-09-20', n = 100)
 E
 
+F = searchTwitter(searchString = '(#iPhone11ProMax)+lang:en+until:2019-10-25+since:2019-09-20', n = 100)
+F
 
+G = searchTwitter(searchString = '"Apple+watch+series+5"+lang:en+until:2019-10-25+since:2019-09-20', n = 100)
+G
 
-I = searchTwitter(searchString = '"iPhone11+Pro+Max"+lang:en+until:2019-10-25+since:2019-09-20')
+H = searchTwitter(searchString = '"iPad+7th+gen"+lang:en', n = 70)
+H
+
+I = searchTwitter(searchString = '"iPhone11+Pro+Max"+lang:en+until:2019-10-25+since:2019-09-20', n = 100)
 I
 
-J = searchTwitter(searchString = '"Apple+watch+series+5"+lang:en+until:2019-10-25+since:2019-09-20')
+J = searchTwitter(searchString = '"Apple+watch+series+5"+lang:en+until:2019-10-25+since:2019-09-20', n = 100)
 J
 
-K = searchTwitter(searchString = '"iPad+7th+generation"+lang:en+until:2019-10-25+since:2019-09-20')
+K = searchTwitter(searchString = '"iPad+7th+generation"+lang:en+until:2019-10-25+since:2019-09-20', n = 100)
 K
 
-L = searchTwitter(searchString = '(#iPhone11Pro)+lang:en+until:2019-10-25+since:2019-09-20')
+L = searchTwitter(searchString = '(#iPhone11Pro)+lang:en+until:2019-10-25+since:2019-09-20', n = 100)
 L
 
-K = searchTwitter(searchString = '(#iPhone11ProMax)+lang:en+until:2019-10-25+since:2019-09-20', n = 50)
-K
-
-L = searchTwitter(searchString = '"Apple+watch+series+5"+lang:en+until:2019-10-25+since:2019-09-20')
-L
-
-M = searchTwitter(searchString = '(#AppleWatch5)+until:2019-10-25+since:2019-09-20')
+M = searchTwitter(searchString = '(#AppleWatch5)+until:2019-10-25+since:2019-09-20', n = 100)
 M
 
 N = searchTwitter(searchString = '"September+event+2019"+(#Apple)+lang:en')
@@ -58,3 +59,17 @@ Q
 R = searchTwitter(searchString = '(#iPhone11memes)')
 R
 
+S = searchTwitter(searchString = '"iPhone11+meme"+(#iPhone11)+lang:en')
+S
+
+T = searchTwitter(searchString = '(#iPhone11+OR+#iPhone11Pro+OR+#iPhone11ProMax)+lang:en', n = 100)
+T
+
+U = searchTwitter(searchString = '(#Applewatchseries5)+lang:en', n = 100)
+U
+
+V = searchTwitter(searchString = '"Applewatch+Series+5"+lang:en', n = 45)
+V
+
+W = searchTwitter(searchString = '"iPhone11Pro"+(#Triplelens)+lang:en')
+W
