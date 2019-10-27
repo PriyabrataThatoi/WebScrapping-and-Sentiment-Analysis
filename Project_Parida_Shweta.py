@@ -1,4 +1,7 @@
 import twitter
+import csv
+import pandas as pd
+import os
 
 apikey = 'd1TcED6Is1GklAr7gtjReQ1vG'
 apisecretkey = 'Ih7HEDDv7QP1OhA8BkYSHYSG4bzvO3ifSIStfEjif0xqAldRi1'
@@ -100,10 +103,17 @@ tweet22
 
 
 
+df = pd.DataFrame(tweet22) 
+df
+df.size
+
+df.to_csv("t22.csv", index = None, header=True)
 
 
+df.to_csv("t22.csv", index = False, sep=',')
 
-
-
-
-    
+df = pd.DataFrame(tweet25) 
+df
+df.size
+df.to_csv("t22.csv", index = None, header=True)
+df.to_csv("t22.csv", index = False, sep=',')
