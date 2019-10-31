@@ -1,10 +1,5 @@
 library(twitteR)
 
-consumer_key = "9lavKlPTdDMun4dgMnwruycX5"
-consumer_secret = "HzOs39nOeSW7HpgUc0MKfCY4zO3P9cOzfD8OEo1nVClEDeFX80"
-access_token = "203019280-4MJRTEfxtyBvO7E0m0vYX6Si59roZNyUwsBXASmA"
-access_secret = "b2pu6GOVhqx7OTAw4YmzKsZjMaajlLVwwvGK1gwvema54"
-
 A = searchTwitter(searchString = '"iPhone11"+lang:en', n = 100)
 A
 
