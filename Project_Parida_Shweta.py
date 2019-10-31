@@ -3,13 +3,6 @@ import csv
 import pandas as pd
 import os
 
-apikey = 'd1TcED6Is1GklAr7gtjReQ1vG'
-apisecretkey = 'Ih7HEDDv7QP1OhA8BkYSHYSG4bzvO3ifSIStfEjif0xqAldRi1'
-accesstok = '1165029564952846338-A2uEIHzQsBAyG7T2eoNTjT8VYgyO4i'
-accesstoksec = 'AltvYOjoEBjUNCsdLTWKRMP55cabR8LjP8rhUoDMhItes'
-
-project_tweet = twitter.Api(consumer_key=apikey, consumer_secret=apisecretkey, access_token_key=accesstok, access_token_secret=accesstoksec)
-
 ## General
 tweet14 = project_tweet.GetSearch(raw_query='q=apple%20%20September%20event%202019')
 tweet14
